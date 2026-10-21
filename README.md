@@ -2,7 +2,7 @@
 
 Biblioteca de jogos e configurações locais para Windows, com perfis por jogo, prévias e aplicação revisada com backup.
 
-Baixe o **Setup** na [última versão](https://github.com/mathadoor23/tix-client-cs-releases/releases/latest). Instalação por usuário, sem exigir administrador. Requer Windows 10/11 x64 com .NET Framework 4.8. A versão 0.4.0 amplia o antigo Tix Client CS; o canal de atualização mantém o endereço anterior por compatibilidade.
+Baixe o **Setup** na [última versão](https://github.com/mathadoor23/tix-client-cs-releases/releases/latest). Instalação por usuário, sem exigir administrador. Requer Windows 10/11 x64 com .NET Framework 4.8. A versão 0.4.1 corrige uma falha ao selecionar opções nos menus. O T1x Game Client amplia o antigo Tix Client CS; o canal de atualização mantém o endereço anterior por compatibilidade.
 
 ## Recursos
 
