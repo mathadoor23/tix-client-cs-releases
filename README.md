@@ -2,18 +2,20 @@
 
 Biblioteca de jogos e configurações locais para Windows, com perfis por jogo, prévias e aplicação revisada com backup.
 
-Baixe o **Setup** na [última versão](https://github.com/mathadoor23/tix-client-cs-releases/releases/latest). Instalação por usuário, sem exigir administrador. Requer Windows 10/11 x64 com .NET Framework 4.8. A versão 0.4.1 corrige uma falha ao selecionar opções nos menus. O T1x Game Client amplia o antigo Tix Client CS; o canal de atualização mantém o endereço anterior por compatibilidade.
+Baixe o **Setup** na [última versão](https://github.com/mathadoor23/tix-client-cs-releases/releases/latest). Instalação por usuário, sem exigir administrador. Requer Windows 10/11 x64 com .NET Framework 4.8. A versão 0.5.0 adiciona diagnóstico local para jogos; mantém a correção dos menus da 0.4.1. O T1x Game Client amplia o antigo Tix Client CS; o canal de atualização mantém o endereço anterior por compatibilidade.
 
 ## Recursos
 
 - Biblioteca Steam em várias unidades e inclusão manual de jogos pelo executável.
 - Leitura de CPU, RAM e memória dedicada de GPU; perfil com meta de FPS e preferência visual para cada jogo.
+- **Perfil do PC:** sistema, driver de vídeo, plano de energia, armazenamento, prontidão por jogo e teste curto de latência/jitter/perda.
+- Exportação de relatório HTML/JSON sem usuário, nome do computador, números de série ou caminhos de arquivos.
 - Prioridade e energia opcionais de sessão, com registro e restauração. O processo é identificado pelo caminho e pela hora de criação.
 - **CS2:** editor visual de mira, HUD, radar e viewmodel, CFG própria, vídeo, presets, atalhos e arranque.
 - **Deadlock:** mira base no arquivo KV3 nativo, preservando ajustes por herói, editor de vídeo e CFG própria para HUD/FPS.
 - **GTA V Enhanced:** campos gráficos existentes no XML com preservação dos demais dados.
 
-Em **Perfil do PC**, gere uma recomendação e prepare a sugestão no editor. Revise o conteúdo antes de aplicar. Recomendações são heurísticas iniciais: não prometem atingir o alvo de FPS nem substituem uma medição no seu jogo. Para outros títulos, use os recursos gerais e ajuste os gráficos no próprio jogo até existir um módulo específico.
+Em **Perfil do PC**, confira os limites básicos do computador e exporte o diagnóstico. Em **Configuração**, gere uma recomendação e prepare a sugestão no editor. Revise o conteúdo antes de aplicar. Recomendações são heurísticas iniciais: não prometem atingir o alvo de FPS nem substituem uma medição no seu jogo. Para outros títulos, use os recursos gerais e ajuste os gráficos no próprio jogo até existir um módulo específico.
 
 ## Arquivos e recuperação
 
