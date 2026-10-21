@@ -1,21 +1,32 @@
-# Tix Client CS
+# T1x Game Client
 
-Aplicativo Windows focado em ajustes locais do CS2: FPS+ e PRO Config.
+Biblioteca de jogos e configurações locais para Windows, com perfis por jogo, prévias e aplicação revisada com backup.
 
-Baixe o arquivo **TixClientCS-Setup** na [última versão](https://github.com/mathadoor23/tix-client-cs-releases/releases/latest). Instale na sua conta do Windows e abra pelo atalho. Requer Windows 10/11 x64 com .NET Framework 4.8, Steam e CS2 para os recursos do jogo.
+Baixe o **Setup** na [última versão](https://github.com/mathadoor23/tix-client-cs-releases/releases/latest). Instalação por usuário, sem exigir administrador. Requer Windows 10/11 x64 com .NET Framework 4.8. A versão 0.4.0 amplia o antigo Tix Client CS; o canal de atualização mantém o endereço anterior por compatibilidade.
 
-O editor oferece prévia ilustrativa, perfis e geração de `tix_client_cs.cfg`. A instalação da CFG é uma ação separada, com revisão do conteúdo e do destino. O autoexec existente não é substituído. O jogo precisa carregar a CFG para os comandos terem efeito.
+## Recursos
 
-No módulo FPS+, as ações disponíveis nesta prévia são prioridade de processo e plano de energia opcional, com registro e tentativa de restauração. Não há ganho de FPS garantido ou demonstrado.
+- Biblioteca Steam em várias unidades e inclusão manual de jogos pelo executável.
+- Leitura de CPU, RAM e memória dedicada de GPU; perfil com meta de FPS e preferência visual para cada jogo.
+- Prioridade e energia opcionais de sessão, com registro e restauração. O processo é identificado pelo caminho e pela hora de criação.
+- **CS2:** editor visual de mira, HUD, radar e viewmodel, CFG própria, vídeo, presets, atalhos e arranque.
+- **Deadlock:** mira base no arquivo KV3 nativo, preservando ajustes por herói, editor de vídeo e CFG própria para HUD/FPS.
+- **GTA V Enhanced:** campos gráficos existentes no XML com preservação dos demais dados.
+
+Em **Perfil do PC**, gere uma recomendação e prepare a sugestão no editor. Revise o conteúdo antes de aplicar. Recomendações são heurísticas iniciais: não prometem atingir o alvo de FPS nem substituem uma medição no seu jogo. Para outros títulos, use os recursos gerais e ajuste os gráficos no próprio jogo até existir um módulo específico.
+
+## Arquivos e recuperação
+
+O cliente preserva o autoexec do CS2 e usa sua própria CFG. Vídeo, mira nativa do Deadlock e XML do GTA exigem o jogo fechado. Antes de escrever, o programa salva backup e recibo; a restauração recusa sobrescrever mudanças posteriores. Restaurar um arquivo não reverte automaticamente comandos já carregados no jogo. Falha abrupta de energia pode exigir recuperação manual do backup.
+
+O desinstalador remove os arquivos conhecidos do aplicativo e preserva perfis, configurações e backups.
 
 ## Atualizações
 
-Use a área Atualizações do aplicativo para verificar, baixar e instalar uma versão nova. O programa confere assinatura do manifesto, versão, origem, tamanho e SHA-256 do instalador antes de executá-lo. A instalação pede confirmação e preserva perfis e configurações locais.
+Em **Preferências**, consulte, baixe e instale versões explicitamente. O cliente confere assinatura do manifesto, versão, origem, tamanho e SHA-256. O canal tem assinatura própria e não substitui um certificado Authenticode do Windows; o instalador não possui certificado comercial.
 
-O instalador não tem certificado Authenticode comercial. A assinatura do canal de atualização é uma verificação própria do aplicativo e não substitui um certificado do Windows. Use somente os arquivos deste repositório oficial.
+## Limites atuais
 
-## Limites da prévia 0.3.0
+As prévias são ilustrativas. Ainda não há ganho de FPS demonstrado, ajuste automático medido para qualquer jogo, separação adaptativa de aplicativos ou garantia de compatibilidade com todo build. O módulo completo do GTA Legacy ainda não está disponível. As capacidades específicas de cada jogo aparecem separadas na interface.
 
-Vídeo completo, separação de apps, binds e recarga automática ainda não estão disponíveis. A prévia visual é ilustrativa. Validação de todos os ajustes no CS2 e ensaio completo de atualização entre duas versões ainda estão pendentes. Restaurar o arquivo CFG não reverte comandos já carregados no jogo.
-
-Este repositório contém apenas instaladores e documentos públicos. Não inclui configurações pessoais, credenciais, evidências de análise ou componentes de outros aplicativos.
+Este repositório contém somente instaladores, metadados de atualização e documentos públicos.
